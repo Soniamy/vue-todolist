@@ -21,11 +21,22 @@ body {
     align-items: center;
     padding: 10px;
     margin-bottom: 8px;
-    border: 1px solid #403c3c;
+    border: 1px solid #434141;
     border-radius: 4px;
 }
 
 .todo-item.done {
     text-decoration: line-through;
     color: #888;
+}
+input[type='text'] {
+    width: 60%;
+    padding: 8px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
 }

@@ -10,6 +10,12 @@ const app = Vue.createApp({
         };
     },
     methods: {
+        addTodo() {
+            if (this.newTodoText.trim() !== '') {
+                this.todos.push({ text: this.newTodoText, done: false });
+                this.newTodoText = '';
+            }
+        },
         removeTodo(index) {
             this.todos.splice(index, 1);
         },
