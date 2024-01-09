@@ -1,0 +1,31 @@
+:root {
+    --wrapper-width: 1400px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#app {
+    max-width: 400px;
+    margin: 20px auto;
+}
+.title {
+    font-family: cursive;
+    color: rgb(119, 59, 136);
+    padding: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #575353;
+    border-radius: 4px;
+}
+
+.todo-item.done {
+    text-decoration: line-through;
+    color: #888;
+}
