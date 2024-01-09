@@ -19,6 +19,9 @@ const app = Vue.createApp({
         removeTodo(index) {
             this.todos.splice(index, 1);
         },
+        toggleTodo(index) {
+            this.todos[index].done = !this.todos[index].done;
+        },
     },
 });
 
