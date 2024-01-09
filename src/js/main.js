@@ -9,6 +9,11 @@ const app = Vue.createApp({
             newTodoText: '',
         };
     },
+    methods: {
+        removeTodo(index) {
+            this.todos.splice(index, 1);
+        },
+    },
 });
 
 app.mount('#app');

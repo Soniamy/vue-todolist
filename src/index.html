@@ -25,6 +25,7 @@
                     :class="{ 'done': todo.done }"
                 >
                     <span @click="toggleTodo(index)">{{ todo.text }}</span>
+                    <span @click="removeTodo(index)">x</span>
                 </li>
             </ul>
         </div>
